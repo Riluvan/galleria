@@ -583,6 +583,7 @@ ul li a {
   position: relative;
   height: 480px;
   z-index: 3;
+  background: #bea597;
 }
 .gr-discover-component .gr-discover-content h1 {
   margin-bottom: 10px;
@@ -595,6 +596,10 @@ ul li a {
   position: absolute;
   bottom: 0px;
   right: 60px;
+}
+
+.home-discover-section .gr-discover-component {
+  margin-bottom: 200px;
 }
 
 .gr-store-brand-component {
@@ -1014,7 +1019,20 @@ footer .margin_top_70 {
   color: #2a2829;
 }
 
+.gr-dine-discover .gr-discover-component {
+  background: #7F7C4D;
+}
 .gr-dine-discover .gr-discover-component .gr-discover-content h1 {
+  font-size: 60px !important;
+  line-height: 60px !important;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.gr-shop-discover .gr-discover-component {
+  background: #B92F37;
+}
+.gr-shop-discover .gr-discover-component .gr-discover-content h1 {
   font-size: 60px !important;
   line-height: 60px !important;
   color: #ffffff;
@@ -1294,7 +1312,7 @@ p {
   height: 800px;
 }
 .gr-inspiration-banner-section .gr-inspiration-banner-background {
-  background: #D9CFC3;
+  background: #d9cfc3;
   position: relative;
 }
 .gr-inspiration-banner-section h1 {
@@ -2082,7 +2100,7 @@ p {
   .gr-inspiration-banner-section .gr-inspiration-banner-content {
     display: flex;
     align-items: center;
-    background: #D9CFC3;
+    background: #d9cfc3;
     height: auto;
     padding: 30px 50px 70px;
     text-align: center;

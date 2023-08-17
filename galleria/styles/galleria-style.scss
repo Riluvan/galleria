@@ -652,6 +652,7 @@ ul {
     position: relative;
     height: 480px;
     z-index: 3;
+    background: #bea597;
     .gr-discover-content {
         h1 {
             margin-bottom: 10px;
@@ -665,6 +666,11 @@ ul {
         position: absolute;
         bottom: 0px;
         right: 60px;
+    }
+}
+.home-discover-section {
+    .gr-discover-component {
+        margin-bottom: 200px;
     }
 }
 //Discover Component
@@ -1130,6 +1136,7 @@ footer {
 
 .gr-dine-discover {
     .gr-discover-component {
+        background: #7F7C4D;
         .gr-discover-content {
             h1 {
                 font-size: 60px !important;
@@ -1142,8 +1149,13 @@ footer {
 }
 .gr-shop-discover {
     .gr-discover-component {
+        background: #B92F37;
         .gr-discover-content {
             h1 {
+                font-size: 60px !important;
+                line-height: 60px !important;
+                color: #ffffff;
+                margin-bottom: 40px;
             }
         }
     }
@@ -1421,7 +1433,7 @@ p {
         margin-bottom: 120px;
         .gr-inspiration-left-content {
             padding: 60px 20px 0px 20px;
-            h5{
+            h5 {
                 font-size: 14px !important;
                 line-height: 30px !important;
             }
@@ -1452,7 +1464,7 @@ p {
 }
 // gr-inspiration-filter-section
 // gr-inspiration-banner-section
-.gr-inspiration-banner-section{
+.gr-inspiration-banner-section {
     height: 800px;
     margin-bottom: 25px;
     .container-fluid {
@@ -1463,11 +1475,11 @@ p {
         align-items: center;
         height: 800px;
     }
-    .gr-inspiration-banner-background{
-        background: #D9CFC3;
+    .gr-inspiration-banner-background {
+        background: #d9cfc3;
         position: relative;
     }
-    h1{
+    h1 {
         margin-bottom: 30px;
     }
 }
@@ -2442,57 +2454,57 @@ p {
         }
     }
 
- // gr-inspiration-banner-section
-.gr-inspiration-banner-section{
-    height: auto;
-    margin-bottom: 25px;
-    .container-fluid {
-        padding: 0px 20px !important;
-    }
-    .gr-inspiration-banner-content {
-        display: flex;
-        align-items: center;
-        background: #D9CFC3;
+    // gr-inspiration-banner-section
+    .gr-inspiration-banner-section {
         height: auto;
-        padding: 30px 50px 70px;
-        text-align: center;
-        .gr-button-primary{
-            justify-content: center;
+        margin-bottom: 25px;
+        .container-fluid {
+            padding: 0px 20px !important;
+        }
+        .gr-inspiration-banner-content {
+            display: flex;
+            align-items: center;
+            background: #d9cfc3;
+            height: auto;
+            padding: 30px 50px 70px;
+            text-align: center;
+            .gr-button-primary {
+                justify-content: center;
+            }
+        }
+        h1 {
+            margin-bottom: 20px;
         }
     }
-    h1{
-        margin-bottom: 20px;
+    // gr-inspiration-banner-section
+    // gr-inspiration-filter-section
+    .gr-inspiration-filter-section {
+        margin-bottom: 40px;
+        .filter-boxes {
+            padding: 14px 20px;
+            width: auto;
+            margin-right: 10px;
+        }
+        .gr-filter-box-links {
+            display: flex;
+            justify-content: space-between;
+            overflow: auto;
+        }
     }
-}
-// gr-inspiration-banner-section
-// gr-inspiration-filter-section
-.gr-inspiration-filter-section {
-    margin-bottom: 40px;
-    .filter-boxes {
-        padding: 14px 20px;
-        width: auto;
-        margin-right: 10px;
-    }
-    .gr-filter-box-links {
-        display: flex;
-        justify-content: space-between;
-        overflow: auto;
-    }
-}
-// gr-inspiration-filter-section
+    // gr-inspiration-filter-section
 
-// gr-inspiration-content-image
-.gr-inspiration-content-image {
-    .gr-inspiration-view {
-        margin-bottom: 80px;
-        .gr-inspiration-left-content {
-            padding: 30px 10px 0px 10px;
-            margin-bottom: 40px;
-        }
-        .gr-inspiration-right-content {
-            padding: 30px 10px 0px 10px;
+    // gr-inspiration-content-image
+    .gr-inspiration-content-image {
+        .gr-inspiration-view {
+            margin-bottom: 80px;
+            .gr-inspiration-left-content {
+                padding: 30px 10px 0px 10px;
+                margin-bottom: 40px;
+            }
+            .gr-inspiration-right-content {
+                padding: 30px 10px 0px 10px;
+            }
         }
     }
-}
-// gr-inspiration-content-image
+    // gr-inspiration-content-image
 }
