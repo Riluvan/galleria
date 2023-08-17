@@ -823,11 +823,17 @@ ul {
     .gr-heighlighted-content {
         margin-left: 60px;
         margin-right: 90px;
+        h5 {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
         h2 {
             margin-bottom: 30px;
         }
         .description {
-            margin-bottom: 30px;
+            font-size: 20px !important;
+            line-height: 30px !important;
+            margin-bottom: 30px !important;
         }
     }
 }
@@ -1301,6 +1307,49 @@ p {
 // gr-cusine-component
 
 // gr-filter-section
+.gr-search-filter {
+    .search_input {
+        margin-bottom: 20px;
+        .form-control {
+            position: relative;
+            padding: 14px 50px 14px 20px;
+            background: #ffffff 0% 0% no-repeat padding-box;
+            border: 1px solid #e1e1df;
+            border-radius: unset;
+            font-size: 16px !important;
+            line-height: 19px !important;
+            font-family: "town-text-book";
+            &:focus {
+                box-shadow: unset !important;
+            }
+        }
+        .btn-default {
+            position: absolute;
+            right: -1px;
+            top: 0px;
+            padding: 0px;
+            z-index: 5;
+        }
+    }
+    .gr-letters-added {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        div {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                color: #000000 !important;
+                font-size: 16px !important;
+                line-height: 19px !important;
+                font-family: "town-text-book";
+            }
+        }
+    }
+}
 .gr-filter-section {
     .gr-vertical-content {
         margin-bottom: 100px;
@@ -1310,49 +1359,6 @@ p {
     }
     .gr-left-filter-section {
         width: 250px;
-        .gr-search-filter {
-            .search_input {
-                margin-bottom: 20px;
-                .form-control {
-                    position: relative;
-                    padding: 14px 50px 14px 20px;
-                    background: #ffffff 0% 0% no-repeat padding-box;
-                    border: 1px solid #e1e1df;
-                    border-radius: unset;
-                    font-size: 16px !important;
-                    line-height: 19px !important;
-                    font-family: "town-text-book";
-                    &:focus {
-                        box-shadow: unset !important;
-                    }
-                }
-                .btn-default {
-                    position: absolute;
-                    right: -1px;
-                    top: 0px;
-                    padding: 0px;
-                    z-index: 5;
-                }
-            }
-            .gr-letters-added {
-                display: flex;
-                flex-wrap: wrap;
-                margin-bottom: 20px;
-                div {
-                    width: 40px;
-                    height: 40px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    a {
-                        color: #000000 !important;
-                        font-size: 16px !important;
-                        line-height: 19px !important;
-                        font-family: "town-text-book";
-                    }
-                }
-            }
-        }
         .gr-filter-link {
             .gr-button-primary {
                 border-bottom: 1px solid #e1e1df;
@@ -1408,6 +1414,64 @@ p {
     margin-top: -460px;
 }
 // gr-about-content-image
+
+// gr-inspiration-content-image
+.gr-inspiration-content-image {
+    .gr-inspiration-view {
+        margin-bottom: 120px;
+        .gr-inspiration-left-content {
+            padding: 60px 20px 0px 20px;
+            h5{
+                font-size: 14px !important;
+                line-height: 30px !important;
+            }
+        }
+        .gr-inspiration-right-content {
+            padding: 30px 20px 0px 20px;
+        }
+    }
+}
+// gr-inspiration-content-image
+
+// gr-inspiration-filter-section
+.gr-inspiration-filter-section {
+    margin-bottom: 80px;
+    .filter-boxes {
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #e1e1df;
+        padding: 14px 20px;
+        font-size: 16px;
+        line-height: 19px;
+        font-family: "town-text-book";
+        width: 160px;
+    }
+    .gr-filter-box-links {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+// gr-inspiration-filter-section
+// gr-inspiration-banner-section
+.gr-inspiration-banner-section{
+    height: 800px;
+    margin-bottom: 25px;
+    .container-fluid {
+        padding: 0px 40px !important;
+    }
+    .gr-inspiration-banner-content {
+        display: flex;
+        align-items: center;
+        height: 800px;
+    }
+    .gr-inspiration-banner-background{
+        background: #D9CFC3;
+        position: relative;
+    }
+    h1{
+        margin-bottom: 30px;
+    }
+}
+// gr-inspiration-banner-section
 @media (min-width: 1279px) {
     // Fun Component
     .gr-fun-component {
@@ -1574,13 +1638,13 @@ p {
     .gr-button-primary {
         .btn-primary {
             padding: 0px !important;
-            font-size: 12px;
-            line-height: 14px;
-            letter-spacing: 1.2px;
+            font-size: 12px !important;
+            line-height: 14px !important;
+            letter-spacing: 1.2px !important;
             span {
-                margin-left: 12px;
-                margin-top: -2px;
-                font-size: 20px;
+                margin-left: 12px !important;
+                margin-top: -2px !important;
+                font-size: 20px !important;
             }
             &:hover {
                 background-position: left bottom;
@@ -2378,7 +2442,57 @@ p {
         }
     }
 
-    .gr-event-offer-description {
-        
+ // gr-inspiration-banner-section
+.gr-inspiration-banner-section{
+    height: auto;
+    margin-bottom: 25px;
+    .container-fluid {
+        padding: 0px 20px !important;
     }
+    .gr-inspiration-banner-content {
+        display: flex;
+        align-items: center;
+        background: #D9CFC3;
+        height: auto;
+        padding: 30px 50px 70px;
+        text-align: center;
+        .gr-button-primary{
+            justify-content: center;
+        }
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+}
+// gr-inspiration-banner-section
+// gr-inspiration-filter-section
+.gr-inspiration-filter-section {
+    margin-bottom: 40px;
+    .filter-boxes {
+        padding: 14px 20px;
+        width: auto;
+        margin-right: 10px;
+    }
+    .gr-filter-box-links {
+        display: flex;
+        justify-content: space-between;
+        overflow: auto;
+    }
+}
+// gr-inspiration-filter-section
+
+// gr-inspiration-content-image
+.gr-inspiration-content-image {
+    .gr-inspiration-view {
+        margin-bottom: 80px;
+        .gr-inspiration-left-content {
+            padding: 30px 10px 0px 10px;
+            margin-bottom: 40px;
+        }
+        .gr-inspiration-right-content {
+            padding: 30px 10px 0px 10px;
+        }
+    }
+}
+// gr-inspiration-content-image
 }

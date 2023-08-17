@@ -730,11 +730,17 @@ ul li a {
   margin-left: 60px;
   margin-right: 90px;
 }
+.gr-heighlighted-component .gr-heighlighted-content h5 {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
 .gr-heighlighted-component .gr-heighlighted-content h2 {
   margin-bottom: 30px;
 }
 .gr-heighlighted-component .gr-heighlighted-content .description {
-  margin-bottom: 30px;
+  font-size: 20px !important;
+  line-height: 30px !important;
+  margin-bottom: 30px !important;
 }
 
 footer {
@@ -1143,19 +1149,10 @@ p {
   margin: 30px 20px 0px;
 }
 
-.gr-filter-section .gr-vertical-content {
-  margin-bottom: 100px;
-}
-.gr-filter-section .gr-vertical-content .gr-vertical-element {
-  padding: 30px 10px 0px 20px;
-}
-.gr-filter-section .gr-left-filter-section {
-  width: 250px;
-}
-.gr-filter-section .gr-left-filter-section .gr-search-filter .search_input {
+.gr-search-filter .search_input {
   margin-bottom: 20px;
 }
-.gr-filter-section .gr-left-filter-section .gr-search-filter .search_input .form-control {
+.gr-search-filter .search_input .form-control {
   position: relative;
   padding: 14px 50px 14px 20px;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -1165,33 +1162,43 @@ p {
   line-height: 19px !important;
   font-family: "town-text-book";
 }
-.gr-filter-section .gr-left-filter-section .gr-search-filter .search_input .form-control:focus {
+.gr-search-filter .search_input .form-control:focus {
   box-shadow: unset !important;
 }
-.gr-filter-section .gr-left-filter-section .gr-search-filter .search_input .btn-default {
+.gr-search-filter .search_input .btn-default {
   position: absolute;
   right: -1px;
   top: 0px;
   padding: 0px;
   z-index: 5;
 }
-.gr-filter-section .gr-left-filter-section .gr-search-filter .gr-letters-added {
+.gr-search-filter .gr-letters-added {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-.gr-filter-section .gr-left-filter-section .gr-search-filter .gr-letters-added div {
+.gr-search-filter .gr-letters-added div {
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.gr-filter-section .gr-left-filter-section .gr-search-filter .gr-letters-added div a {
+.gr-search-filter .gr-letters-added div a {
   color: #000000 !important;
   font-size: 16px !important;
   line-height: 19px !important;
   font-family: "town-text-book";
+}
+
+.gr-filter-section .gr-vertical-content {
+  margin-bottom: 100px;
+}
+.gr-filter-section .gr-vertical-content .gr-vertical-element {
+  padding: 30px 10px 0px 20px;
+}
+.gr-filter-section .gr-left-filter-section {
+  width: 250px;
 }
 .gr-filter-section .gr-left-filter-section .gr-filter-link .gr-button-primary {
   border-bottom: 1px solid #e1e1df;
@@ -1241,6 +1248,57 @@ p {
   opacity: 0.05;
   height: 506px;
   margin-top: -460px;
+}
+
+.gr-inspiration-content-image .gr-inspiration-view {
+  margin-bottom: 120px;
+}
+.gr-inspiration-content-image .gr-inspiration-view .gr-inspiration-left-content {
+  padding: 60px 20px 0px 20px;
+}
+.gr-inspiration-content-image .gr-inspiration-view .gr-inspiration-left-content h5 {
+  font-size: 14px !important;
+  line-height: 30px !important;
+}
+.gr-inspiration-content-image .gr-inspiration-view .gr-inspiration-right-content {
+  padding: 30px 20px 0px 20px;
+}
+
+.gr-inspiration-filter-section {
+  margin-bottom: 80px;
+}
+.gr-inspiration-filter-section .filter-boxes {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #e1e1df;
+  padding: 14px 20px;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "town-text-book";
+  width: 160px;
+}
+.gr-inspiration-filter-section .gr-filter-box-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gr-inspiration-banner-section {
+  height: 800px;
+  margin-bottom: 25px;
+}
+.gr-inspiration-banner-section .container-fluid {
+  padding: 0px 40px !important;
+}
+.gr-inspiration-banner-section .gr-inspiration-banner-content {
+  display: flex;
+  align-items: center;
+  height: 800px;
+}
+.gr-inspiration-banner-section .gr-inspiration-banner-background {
+  background: #D9CFC3;
+  position: relative;
+}
+.gr-inspiration-banner-section h1 {
+  margin-bottom: 30px;
 }
 
 @media (min-width: 1279px) {
@@ -1354,14 +1412,14 @@ p {
   }
   .gr-button-primary .btn-primary {
     padding: 0px !important;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 1.2px;
+    font-size: 12px !important;
+    line-height: 14px !important;
+    letter-spacing: 1.2px !important;
   }
   .gr-button-primary .btn-primary span {
-    margin-left: 12px;
-    margin-top: -2px;
-    font-size: 20px;
+    margin-left: 12px !important;
+    margin-top: -2px !important;
+    font-size: 20px !important;
   }
   .gr-button-primary .btn-primary:hover {
     background-position: left bottom;
@@ -2013,5 +2071,49 @@ p {
     font-size: 40px !important;
     line-height: 48px !important;
     margin-bottom: 20px;
+  }
+  .gr-inspiration-banner-section {
+    height: auto;
+    margin-bottom: 25px;
+  }
+  .gr-inspiration-banner-section .container-fluid {
+    padding: 0px 20px !important;
+  }
+  .gr-inspiration-banner-section .gr-inspiration-banner-content {
+    display: flex;
+    align-items: center;
+    background: #D9CFC3;
+    height: auto;
+    padding: 30px 50px 70px;
+    text-align: center;
+  }
+  .gr-inspiration-banner-section .gr-inspiration-banner-content .gr-button-primary {
+    justify-content: center;
+  }
+  .gr-inspiration-banner-section h1 {
+    margin-bottom: 20px;
+  }
+  .gr-inspiration-filter-section {
+    margin-bottom: 40px;
+  }
+  .gr-inspiration-filter-section .filter-boxes {
+    padding: 14px 20px;
+    width: auto;
+    margin-right: 10px;
+  }
+  .gr-inspiration-filter-section .gr-filter-box-links {
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+  }
+  .gr-inspiration-content-image .gr-inspiration-view {
+    margin-bottom: 80px;
+  }
+  .gr-inspiration-content-image .gr-inspiration-view .gr-inspiration-left-content {
+    padding: 30px 10px 0px 10px;
+    margin-bottom: 40px;
+  }
+  .gr-inspiration-content-image .gr-inspiration-view .gr-inspiration-right-content {
+    padding: 30px 10px 0px 10px;
   }
 }/*# sourceMappingURL=galleria-style.css.map */
