@@ -1408,7 +1408,7 @@ p {
                     align-items: center !important;
                     justify-content: center !important;
                     padding: unset !important;
-                    .form-switch.form-check-input {
+                    .form-check-input {
                         width: 38px !important;
                         height: 20px !important;
                         margin: 0px !important;
@@ -1462,7 +1462,7 @@ p {
                             align-items: center !important;
                             position: relative;
                             border-bottom: 1px solid #e1e1df;
-                            .form-switch .form-check-input {
+                             .form-check-input {
                                 width: 100% !important;
                                 margin: 0px !important;
                                 position: relative;
@@ -1477,7 +1477,7 @@ p {
                             &::after {
                                 content: "";
                                 position: absolute;
-                                background: url(../images/arrow_forward.svg);
+                                background: url("../images/arrow_forward.svg");
                                 width: 48px;
                                 height: 48px;
                                 right: 15px;

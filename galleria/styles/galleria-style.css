@@ -1226,7 +1226,7 @@ p {
   justify-content: center !important;
   padding: unset !important;
 }
-.gr-search-filter .gr-letters-added .fieldset-wrapper .radio .js-form-item .form-switch.form-check-input {
+.gr-search-filter .gr-letters-added .fieldset-wrapper .radio .js-form-item .form-check-input {
   width: 38px !important;
   height: 20px !important;
   margin: 0px !important;
@@ -1260,7 +1260,7 @@ p {
   position: relative;
   border-bottom: 1px solid #e1e1df;
 }
-.gr-filter-section .gr-left-filter-section .gr-filter-link .fieldset-wrapper .checkbox .form-checkboxes .js-form-item .form-switch .form-check-input {
+.gr-filter-section .gr-left-filter-section .gr-filter-link .fieldset-wrapper .checkbox .form-checkboxes .js-form-item .form-check-input {
   width: 100% !important;
   margin: 0px !important;
   position: relative;
@@ -1275,7 +1275,7 @@ p {
 .gr-filter-section .gr-left-filter-section .gr-filter-link .fieldset-wrapper .checkbox .form-checkboxes .js-form-item::after {
   content: "";
   position: absolute;
-  background: url(../images/arrow_forward.svg);
+  background: url("../images/arrow_forward.svg");
   width: 48px;
   height: 48px;
   right: 15px;
