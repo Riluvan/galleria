@@ -1211,24 +1211,6 @@ p {
   padding: 0px;
   z-index: 5;
 }
-.gr-search-filter .gr-letters-added {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-.gr-search-filter .gr-letters-added div {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.gr-search-filter .gr-letters-added div a {
-  color: #000000 !important;
-  font-size: 16px !important;
-  line-height: 19px !important;
-  font-family: "town-text-book";
-}
 .gr-search-filter .gr-letters-added .fieldset-wrapper .radio {
   display: flex !important;
   flex-wrap: wrap !important;
@@ -1270,17 +1252,6 @@ p {
 }
 .gr-filter-section .gr-left-filter-section {
   width: 250px;
-}
-.gr-filter-section .gr-left-filter-section .gr-filter-link .gr-button-primary {
-  border-bottom: 1px solid #e1e1df;
-}
-.gr-filter-section .gr-left-filter-section .gr-filter-link .gr-button-primary .btn-primary {
-  justify-content: space-between;
-  width: 100%;
-  padding: 20px 8px !important;
-}
-.gr-filter-section .gr-left-filter-section .gr-filter-link .gr-button-primary .btn-primary:hover {
-  padding: 20px 16px !important;
 }
 .gr-filter-section .gr-left-filter-section .gr-filter-link .fieldset-wrapper .checkbox .form-checkboxes .js-form-item {
   padding: 0px 0px 20px !important;
@@ -1428,11 +1399,31 @@ p {
 .gr-other-movies-section .gr-heading-component h1 {
   width: 80%;
 }
-.gr-other-movies-section .gr-event-vertical-component {
-  margin-bottom: 0px;
+.gr-other-movies-section .gr-movie-vertical-component .gr-vertical-content img {
+  margin-bottom: 24px;
 }
-.gr-other-movies-section .gr-event-vertical-component .gr-vertical-content {
-  margin-bottom: 0px;
+.gr-other-movies-section .gr-movie-vertical-component .gr-vertical-content h4 {
+  font-size: 22px !important;
+  line-height: 38px !important;
+  font-family: "Sangira";
+  letter-spacing: 0px;
+  color: #2a2829;
+}
+.gr-other-movies-section .gr-movie-vertical-component .gr-vertical-content .timing {
+  font-size: 12px !important;
+  line-height: 30px !important;
+  letter-spacing: 0px;
+  color: #2a2829;
+  margin-bottom: 20px;
+}
+.gr-other-movies-section .gr-movie-vertical-component .gr-vertical-content .button a {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  letter-spacing: 1.2px;
+  color: #000000;
+  padding: 14px 42px 13px;
 }
 
 .gm-style .place-card-large {

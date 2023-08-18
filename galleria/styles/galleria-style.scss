@@ -919,7 +919,7 @@ footer {
     }
 
     .gr-footer-mail-submit {
-        form{
+        form {
             position: relative !important;
         }
         button {
@@ -1378,22 +1378,22 @@ p {
         }
     }
     .gr-letters-added {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-        div {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            a {
-                color: #000000 !important;
-                font-size: 16px !important;
-                line-height: 19px !important;
-                font-family: "town-text-book";
-            }
-        }
+        // display: flex;
+        // flex-wrap: wrap;
+        // margin-bottom: 20px;
+        // div {
+        //     width: 40px;
+        //     height: 40px;
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     a {
+        //         color: #000000 !important;
+        //         font-size: 16px !important;
+        //         line-height: 19px !important;
+        //         font-family: "town-text-book";
+        //     }
+        // }
         .fieldset-wrapper {
             .radio {
                 display: flex !important;
@@ -1442,17 +1442,17 @@ p {
     .gr-left-filter-section {
         width: 250px;
         .gr-filter-link {
-            .gr-button-primary {
-                border-bottom: 1px solid #e1e1df;
-                .btn-primary {
-                    justify-content: space-between;
-                    width: 100%;
-                    padding: 20px 8px !important;
-                    &:hover {
-                        padding: 20px 16px !important;
-                    }
-                }
-            }
+            // .gr-button-primary {
+            //     border-bottom: 1px solid #e1e1df;
+            //     .btn-primary {
+            //         justify-content: space-between;
+            //         width: 100%;
+            //         padding: 20px 8px !important;
+            //         &:hover {
+            //             padding: 20px 16px !important;
+            //         }
+            //     }
+            // }
             .fieldset-wrapper {
                 .checkbox {
                     .form-checkboxes {
@@ -1619,14 +1619,40 @@ p {
     background: rgba(000, 000, 000, 0.05) 0% 0% no-repeat padding-box;
     margin-bottom: 100px;
     .gr-heading-component {
-        h1{
+        h1 {
             width: 80%;
         }
     }
-    .gr-event-vertical-component{
-        margin-bottom: 0px;
+    .gr-movie-vertical-component {
         .gr-vertical-content {
-            margin-bottom: 0px;
+            img{
+                margin-bottom: 24px;
+            }
+            h4 {
+                font-size: 22px !important;
+                line-height: 38px !important;
+                font-family: "Sangira";
+                letter-spacing: 0px;
+                color: #2a2829;
+            }
+            .timing {
+                font-size: 12px !important;
+                line-height: 30px !important;
+                letter-spacing: 0px;
+                color: #2a2829;
+                margin-bottom: 20px;
+            }
+            .button {
+                a {
+                    background: #ffffff 0% 0% no-repeat padding-box;
+                    border: 1px solid #000000;
+                    font-size: 12px !important;
+                    line-height: 14px !important;
+                    letter-spacing: 1.2px;
+                    color: #000000;
+                    padding: 14px 42px 13px;
+                }
+            }
         }
     }
 }
