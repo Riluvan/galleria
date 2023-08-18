@@ -792,7 +792,7 @@ footer .gr-footer-ul-list-2 {
 }
 footer .form-control {
   padding: 17px 110px 17px 20px;
-  color: #ffffff;
+  color: #ffffff !important;
   border-radius: 0px;
   margin: 20px 0px 24px;
   background-color: rgba(255, 255, 255, 0.4) !important;
@@ -820,9 +820,12 @@ footer .form-wrapper {
   right: 0px;
   top: 48px;
 }
+footer .gr-footer-mail-submit form {
+  position: relative !important;
+}
 footer .gr-footer-mail-submit button {
   position: absolute;
-  top: 0px;
+  bottom: -1px;
   right: 0px;
 }
 footer .gr-footer-mail-submit button.btn {
@@ -1158,6 +1161,14 @@ p {
   color: #ffffff;
 }
 
+.gr-movie-detail-component .gr-store-banner-component::after {
+  background: transparent linear-gradient(180deg, rgba(185, 47, 55, 0) 0%, #b92f37 100%) 0% 0% no-repeat padding-box;
+}
+.gr-movie-detail-component .gr-store-banner-component .gr-store-banner-content div {
+  width: 70%;
+  color: #ffffff;
+}
+
 .gr-event-offer-description .gr-store-box {
   background: rgba(0, 0, 0, 0.1) 0% 0% no-repeat padding-box;
 }
@@ -1404,9 +1415,24 @@ p {
   justify-content: center;
   width: 120px;
   height: 120px;
-  background: #D9CFC3 0% 0% no-repeat padding-box;
+  background: #d9cfc3 0% 0% no-repeat padding-box;
   border-radius: 50%;
   margin-bottom: 20px;
+}
+
+.gr-other-movies-section {
+  padding: 120px 0px 150px;
+  background: rgba(0, 0, 0, 0.05) 0% 0% no-repeat padding-box;
+  margin-bottom: 100px;
+}
+.gr-other-movies-section .gr-heading-component h1 {
+  width: 80%;
+}
+.gr-other-movies-section .gr-event-vertical-component {
+  margin-bottom: 0px;
+}
+.gr-other-movies-section .gr-event-vertical-component .gr-vertical-content {
+  margin-bottom: 0px;
 }
 
 .gm-style .place-card-large {

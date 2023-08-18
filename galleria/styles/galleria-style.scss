@@ -893,7 +893,7 @@ footer {
 
     .form-control {
         padding: 17px 110px 17px 20px;
-        color: #ffffff;
+        color: #ffffff !important;
         border-radius: 0px;
         margin: 20px 0px 24px;
         background-color: rgba(255, 255, 255, 0.4) !important;
@@ -918,20 +918,25 @@ footer {
         top: 48px;
     }
 
-    .gr-footer-mail-submit button {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        &.btn {
-            background: #000000 !important;
-            border-radius: 0px;
-            border: unset;
-            height: 50px;
-            width: auto !important;
-            padding: 17px 24px;
-            font-size: 12px;
-            line-height: 14px;
-            text-transform: uppercase;
+    .gr-footer-mail-submit {
+        form{
+            position: relative !important;
+        }
+        button {
+            position: absolute;
+            bottom: -1px;
+            right: 0px;
+            &.btn {
+                background: #000000 !important;
+                border-radius: 0px;
+                border: unset;
+                height: 50px;
+                width: auto !important;
+                padding: 17px 24px;
+                font-size: 12px;
+                line-height: 14px;
+                text-transform: uppercase;
+            }
         }
     }
     hr {
@@ -1088,7 +1093,7 @@ footer {
     .gr-inner-section-component {
         .gr-inner-banner-section {
             align-items: end;
-            h1{
+            h1 {
                 margin-bottom: 50px;
             }
             &::after {
@@ -1305,6 +1310,22 @@ p {
     }
 }
 // gr-evenet-offer-component
+
+// gr-movie-detail-component
+.gr-movie-detail-component {
+    .gr-store-banner-component {
+        &::after {
+            background: transparent linear-gradient(180deg, #b92f3700 0%, #b92f37 100%) 0% 0% no-repeat padding-box;
+        }
+        .gr-store-banner-content {
+            div {
+                width: 70%;
+                color: #ffffff;
+            }
+        }
+    }
+}
+// gr-movie-detail-component
 
 // gr-event-offer-description
 .gr-event-offer-description {
@@ -1571,11 +1592,11 @@ p {
 
 // gr-facilities-services-section
 .gr-facilities-services-section {
-    .gr-facilities-icons{
+    .gr-facilities-icons {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .gr-icons-content{
+        .gr-icons-content {
             text-align: center;
             .gr-icon {
                 display: flex;
@@ -1583,7 +1604,7 @@ p {
                 justify-content: center;
                 width: 120px;
                 height: 120px;
-                background: #D9CFC3 0% 0% no-repeat padding-box;
+                background: #d9cfc3 0% 0% no-repeat padding-box;
                 border-radius: 50%;
                 margin-bottom: 20px;
             }
@@ -1591,6 +1612,25 @@ p {
     }
 }
 // gr-facilities-services-section
+
+// gr-other-movies-section
+.gr-other-movies-section {
+    padding: 120px 0px 150px;
+    background: rgba(000, 000, 000, 0.05) 0% 0% no-repeat padding-box;
+    margin-bottom: 100px;
+    .gr-heading-component {
+        h1{
+            width: 80%;
+        }
+    }
+    .gr-event-vertical-component{
+        margin-bottom: 0px;
+        .gr-vertical-content {
+            margin-bottom: 0px;
+        }
+    }
+}
+// gr-other-movies-section
 
 .gm-style .place-card-large {
     display: none !important;
