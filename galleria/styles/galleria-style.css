@@ -1260,12 +1260,12 @@ p {
   position: relative;
   border-bottom: 1px solid #e1e1df;
 }
-.gr-filter-section .gr-left-filter-section .gr-filter-link .fieldset-wrapper .checkbox .form-checkboxes .js-form-item .form-switch.form-check-input {
+.gr-filter-section .gr-left-filter-section .gr-filter-link .fieldset-wrapper .checkbox .form-checkboxes .js-form-item .form-switch .form-check-input {
   width: 100% !important;
   margin: 0px !important;
   position: relative;
   z-index: 3;
-  opacity: 0;
+  opacity: 0 !important;
 }
 .gr-filter-section .gr-left-filter-section .gr-filter-link .fieldset-wrapper .checkbox .form-checkboxes .js-form-item label.form-check-label {
   position: absolute !important;

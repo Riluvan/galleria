@@ -1462,12 +1462,12 @@ p {
                             align-items: center !important;
                             position: relative;
                             border-bottom: 1px solid #e1e1df;
-                            .form-switch.form-check-input {
+                            .form-switch .form-check-input {
                                 width: 100% !important;
                                 margin: 0px !important;
                                 position: relative;
                                 z-index: 3;
-                                opacity: 0;
+                                opacity: 0 !important;
                             }
                             label.form-check-label {
                                 position: absolute !important;
