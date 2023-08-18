@@ -969,6 +969,16 @@ footer .margin_top_70 {
   background: transparent linear-gradient(180deg, rgba(185, 47, 55, 0) 0%, #b92f37 100%) 0% 0% no-repeat padding-box;
 }
 
+.gr-visitor-banner-section .gr-inner-section-component .gr-inner-banner-section {
+  align-items: end;
+}
+.gr-visitor-banner-section .gr-inner-section-component .gr-inner-banner-section h1 {
+  margin-bottom: 50px;
+}
+.gr-visitor-banner-section .gr-inner-section-component .gr-inner-banner-section::after {
+  background: transparent linear-gradient(180deg, rgba(217, 207, 195, 0) 0%, #d9cfc3 100%) 0% 0% no-repeat padding-box;
+}
+
 .gr-event-image-content {
   margin-bottom: 200px;
 }
@@ -1020,7 +1030,7 @@ footer .margin_top_70 {
 }
 
 .gr-dine-discover .gr-discover-component {
-  background: #7F7C4D;
+  background: #7f7c4d;
 }
 .gr-dine-discover .gr-discover-component .gr-discover-content h1 {
   font-size: 60px !important;
@@ -1030,7 +1040,7 @@ footer .margin_top_70 {
 }
 
 .gr-shop-discover .gr-discover-component {
-  background: #B92F37;
+  background: #b92f37;
 }
 .gr-shop-discover .gr-discover-component .gr-discover-content h1 {
   font-size: 60px !important;
@@ -1208,6 +1218,38 @@ p {
   line-height: 19px !important;
   font-family: "town-text-book";
 }
+.gr-search-filter .gr-letters-added .fieldset-wrapper .radio {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin-bottom: 20px !important;
+}
+.gr-search-filter .gr-letters-added .fieldset-wrapper .radio .js-form-item {
+  padding: unset !important;
+  width: 40px !important;
+  height: 40px !important;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: unset !important;
+}
+.gr-search-filter .gr-letters-added .fieldset-wrapper .radio .js-form-item .form-switch.form-check-input {
+  width: 38px !important;
+  height: 20px !important;
+  margin: 0px !important;
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+}
+.gr-search-filter .gr-letters-added .fieldset-wrapper .radio .js-form-item label.form-check-label {
+  position: absolute !important;
+  z-index: 1;
+  left: 16px !important;
+  top: 12px !important;
+}
+.gr-search-filter .gr-letters-added .fieldset-wrapper .radio .js-form-item:first-child label.form-check-label {
+  left: 8px !important;
+}
 
 .gr-filter-section .gr-vertical-content {
   margin-bottom: 100px;
@@ -1228,6 +1270,35 @@ p {
 }
 .gr-filter-section .gr-left-filter-section .gr-filter-link .gr-button-primary .btn-primary:hover {
   padding: 20px 16px !important;
+}
+.gr-filter-section .gr-left-filter-section .gr-filter-link .fieldset-wrapper .checkbox .form-checkboxes .js-form-item {
+  padding: 0px 0px 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  position: relative;
+  border-bottom: 1px solid #e1e1df;
+}
+.gr-filter-section .gr-left-filter-section .gr-filter-link .fieldset-wrapper .checkbox .form-checkboxes .js-form-item .form-switch.form-check-input {
+  width: 100% !important;
+  margin: 0px !important;
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+}
+.gr-filter-section .gr-left-filter-section .gr-filter-link .fieldset-wrapper .checkbox .form-checkboxes .js-form-item label.form-check-label {
+  position: absolute !important;
+  z-index: 1;
+  left: 0px !important;
+}
+.gr-filter-section .gr-left-filter-section .gr-filter-link .fieldset-wrapper .checkbox .form-checkboxes .js-form-item::after {
+  content: "";
+  position: absolute;
+  background: url(../images/arrow_forward.svg);
+  width: 48px;
+  height: 48px;
+  right: 15px;
+  top: 2px;
+  z-index: 1;
 }
 
 #sticky,
@@ -1317,6 +1388,29 @@ p {
 }
 .gr-inspiration-banner-section h1 {
   margin-bottom: 30px;
+}
+
+.gr-facilities-services-section .gr-facilities-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gr-facilities-services-section .gr-facilities-icons .gr-icons-content {
+  text-align: center;
+}
+.gr-facilities-services-section .gr-facilities-icons .gr-icons-content .gr-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  background: #D9CFC3 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.gm-style .place-card-large {
+  display: none !important;
 }
 
 @media (min-width: 1279px) {
