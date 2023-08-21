@@ -1077,6 +1077,9 @@ footer {
         h1 {
             position: relative;
             z-index: 2;
+            width: 730px;
+            margin: 0px auto;
+            text-align: center;
         }
     }
 }
@@ -1089,9 +1092,20 @@ footer {
         }
     }
 }
+.gr-cinema-banner-section {
+    .gr-inner-section-component {
+        .gr-inner-banner-section {
+            margin-bottom: 80px;
+            &::after {
+                background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
+            }
+        }
+    }
+}
 .gr-visitor-banner-section {
     .gr-inner-section-component {
         .gr-inner-banner-section {
+            margin-bottom: 140px;
             align-items: end;
             h1 {
                 margin-bottom: 50px;
@@ -1378,22 +1392,22 @@ p {
         }
     }
     .gr-letters-added {
-        // display: flex;
-        // flex-wrap: wrap;
-        // margin-bottom: 20px;
-        // div {
-        //     width: 40px;
-        //     height: 40px;
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: center;
-        //     a {
-        //         color: #000000 !important;
-        //         font-size: 16px !important;
-        //         line-height: 19px !important;
-        //         font-family: "town-text-book";
-        //     }
-        // }
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        & > div {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                color: #000000 !important;
+                font-size: 16px !important;
+                line-height: 19px !important;
+                font-family: "town-text-book";
+            }
+        }
         .fieldset-wrapper {
             .radio {
                 display: flex !important;
@@ -1441,50 +1455,52 @@ p {
     }
     .gr-left-filter-section {
         width: 250px;
-        .gr-filter-link {
-            // .gr-button-primary {
-            //     border-bottom: 1px solid #e1e1df;
-            //     .btn-primary {
-            //         justify-content: space-between;
-            //         width: 100%;
-            //         padding: 20px 8px !important;
-            //         &:hover {
-            //             padding: 20px 16px !important;
-            //         }
-            //     }
-            // }
-            .fieldset-wrapper {
-                .checkbox {
-                    .form-checkboxes {
-                        .js-form-item {
-                            padding: 0px 0px 20px !important;
-                            display: flex !important;
-                            align-items: center !important;
-                            position: relative;
-                            border-bottom: 1px solid #e1e1df;
-                             .form-check-input {
-                                width: 100% !important;
-                                margin: 0px !important;
-                                position: relative;
-                                z-index: 3;
-                                opacity: 0 !important;
-                            }
-                            label.form-check-label {
-                                position: absolute !important;
-                                z-index: 1;
-                                left: 0px !important;
-                            }
-                            &::after {
-                                content: "";
-                                position: absolute;
-                                background: url("../images/arrow_forward.svg");
-                                width: 48px;
-                                height: 48px;
-                                right: 15px;
-                                top: 2px;
-                                z-index: 1;
-                            }
-                        }
+    }
+}
+
+.gr-filter-link {
+    width: 250px;
+    .gr-button-primary {
+        border-bottom: 1px solid #e1e1df;
+        .btn-primary {
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px 8px !important;
+            &:hover {
+                padding: 20px 16px !important;
+            }
+        }
+    }
+    .fieldset-wrapper {
+        .checkbox {
+            .form-checkboxes {
+                .js-form-item {
+                    padding: 0px 0px 20px !important;
+                    display: flex !important;
+                    align-items: center !important;
+                    position: relative;
+                    border-bottom: 1px solid #e1e1df;
+                    .form-check-input {
+                        width: 100% !important;
+                        margin: 0px !important;
+                        position: relative;
+                        z-index: 3;
+                        opacity: 0 !important;
+                    }
+                    label.form-check-label {
+                        position: absolute !important;
+                        z-index: 1;
+                        left: 0px !important;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background: url("../images/arrow_forward.svg");
+                        width: 48px;
+                        height: 48px;
+                        right: 15px;
+                        top: 2px;
+                        z-index: 1;
                     }
                 }
             }
@@ -1592,10 +1608,12 @@ p {
 
 // gr-facilities-services-section
 .gr-facilities-services-section {
+    margin-bottom: 120px;
     .gr-facilities-icons {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 60px;
         .gr-icons-content {
             text-align: center;
             .gr-icon {
@@ -1610,10 +1628,62 @@ p {
             }
         }
     }
+    .gr-facilities-content {
+        border-bottom: 1px solid rgba(000, 000, 000, 0.1);
+        padding-top: 21px;
+        padding-bottom: 12px;
+        &:last-child {
+            border-bottom: unset;
+        }
+        h4 {
+            font-size: 22px !important;
+            line-height: 38px !important;
+            font-family: "Sangira";
+            letter-spacing: 0px;
+            color: #2a2829;
+        }
+    }
 }
 // gr-facilities-services-section
 
 // gr-other-movies-section
+
+.gr-movie-vertical-component {
+    margin-bottom: 80px;
+    .gr-vertical-content {
+        margin-bottom: 80px;
+        img {
+            margin-bottom: 24px;
+        }
+        h4 {
+            font-size: 22px !important;
+            line-height: 38px !important;
+            font-family: "Sangira";
+            letter-spacing: 0px;
+            color: #2a2829;
+        }
+        .timing {
+            font-size: 12px !important;
+            line-height: 30px !important;
+            letter-spacing: 0px;
+            color: #2a2829;
+            margin-bottom: 20px;
+        }
+        .button {
+            height: 30px;
+            a {
+                background: #ffffff 0% 0% no-repeat padding-box;
+                border: 1px solid #000000;
+                font-size: 12px !important;
+                line-height: 14px !important;
+                letter-spacing: 1.2px;
+                color: #000000;
+                padding: 14px 42px 13px;
+            }
+        }
+    }
+}
+
 .gr-other-movies-section {
     padding: 120px 0px 150px;
     background: rgba(000, 000, 000, 0.05) 0% 0% no-repeat padding-box;
@@ -1624,40 +1694,102 @@ p {
         }
     }
     .gr-movie-vertical-component {
+        margin-bottom: 0px;
         .gr-vertical-content {
-            img{
-                margin-bottom: 24px;
-            }
-            h4 {
-                font-size: 22px !important;
-                line-height: 38px !important;
-                font-family: "Sangira";
-                letter-spacing: 0px;
-                color: #2a2829;
-            }
-            .timing {
-                font-size: 12px !important;
-                line-height: 30px !important;
-                letter-spacing: 0px;
-                color: #2a2829;
-                margin-bottom: 20px;
-            }
-            .button {
-                a {
-                    background: #ffffff 0% 0% no-repeat padding-box;
-                    border: 1px solid #000000;
-                    font-size: 12px !important;
-                    line-height: 14px !important;
-                    letter-spacing: 1.2px;
-                    color: #000000;
-                    padding: 14px 42px 13px;
-                }
-            }
+            margin-bottom: 0px;
         }
     }
 }
 // gr-other-movies-section
 
+// gr-iframe-section
+.gr-iframe-section {
+    margin-bottom: 120px;
+    .gr-heading-component {
+        h1 {
+            width: 70%;
+        }
+    }
+    .container-fluid {
+        padding: 0px 40px !important;
+        position: relative;
+    }
+    iframe {
+        width: 100%;
+        height: 700px;
+        margin-bottom: 80px;
+        position: relative;
+    }
+    .gr-iframe-content {
+        margin-bottom: 60px;
+        h4 {
+            font-size: 22px !important;
+            line-height: 38px !important;
+            font-family: "Sangira";
+            letter-spacing: 0px;
+            color: #2a2829;
+        }
+        .description {
+            margin-bottom: 40px !important;
+        }
+        a {
+            font-size: 12px !important;
+            line-height: 14px !important;
+            padding: 13px 27px !important;
+            text-align: center !important;
+            letter-spacing: 1.2px !important;
+            border: 1px solid #000000;
+            &.btn-secondary {
+                background: #ffffff !important;
+                color: #000000 !important;
+            }
+        }
+    }
+    .gr-store-box {
+        background: white !important;
+        position: absolute;
+        bottom: 205px;
+        left: 104px;
+    }
+}
+
+// gr-iframe-section
+
+// gr-upcoming-trailer-component
+.gr-upcoming-trailer-component {
+    margin-bottom: 140px;
+    .gr-trailer-poster {
+        position: relative;
+        margin-bottom: 20px;
+        video {
+            width: 100%;
+            position: relative;
+        }
+        &::after {
+            content: "";
+            width: 100%;
+            height: 140px;
+            left: 0px;
+            right: 0px;
+            bottom: 4px;
+            position: absolute;
+            background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
+            opacity: 0.5;
+        }
+        .gr-trailer-content {
+            position: absolute;
+            left: 40px;
+            bottom: 40px;
+            z-index: 3;
+            button {
+                background: transparent !important;
+                border: unset !important;
+                padding: unset !important;
+            }
+        }
+    }
+}
+// gr-upcoming-trailer-component
 .gm-style .place-card-large {
     display: none !important;
 }
@@ -2684,4 +2816,137 @@ p {
         }
     }
     // gr-inspiration-content-image
+
+    .gr-cinema-banner-section {
+        .gr-inner-section-component {
+            .gr-inner-banner-section {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .gr-movie-vertical-component {
+        margin-bottom: 60px;
+        .gr-vertical-content {
+            margin-bottom: 0px;
+            padding: 0px 5px;
+            .button {
+                a {
+                    padding: 14px 30px 13px;
+                }
+            }
+        }
+    }
+
+    .gr-upcoming-trailer-component {
+        margin-bottom: 40px;
+    }
+
+    .gr-visitor-banner-section {
+        .gr-inner-section-component {
+            .gr-inner-banner-section {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .gr-facilities-services-section {
+        margin-bottom: 80px;
+        .gr-facilities-icons {
+            overflow-x: auto;
+            margin-bottom: 40px;
+            .gr-icons-content {
+                margin-right: 20px;
+            }
+        }
+        .gr-facilities-content {
+            border-bottom: unset;
+            padding-top: unset;
+            padding-bottom: unset;
+            .accordion-button {
+                font-size: 22px !important;
+                line-height: 38px !important;
+                font-family: "Sangira";
+                letter-spacing: 0px;
+                color: #2a2829;
+                background: transparent;
+                &:not(.collapsed) {
+                    box-shadow: unset !important;
+                }
+                &::after {
+                    content: unset !important;
+                }
+                &:focus {
+                    border-color: unset !important;
+                    box-shadow: unset !important;
+                }
+            }
+            .accordion-item:first-of-type .accordion-button {
+                border-top-left-radius: unset !important;
+                border-top-right-radius: unset !important;
+            }
+            .accordion-item:last-of-type .accordion-button.collapsed {
+                border-bottom-right-radius: unset !important;
+                border-bottom-left-radius: unset !important;
+            }
+            .accordion-item {
+                border: unset !important;
+                border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;
+                &:last-of-type {
+                    border-bottom-right-radius: unset !important;
+                    border-bottom-left-radius: unset !important;
+                }
+                &:first-of-type {
+                    border-top-left-radius: unset !important;
+                    border-top-right-radius: unset !important;
+                }
+            }
+        }
+    }
+
+    // gr-iframe-section
+    .gr-iframe-section {
+        margin-bottom: 40px;
+        .container-fluid {
+            padding: 0px 0px !important;
+        }
+        iframe {
+            height: 700px;
+            margin-bottom: 60px;
+        }
+        .gr-iframe-content {
+            margin-bottom: 60px;
+            h4 {
+                font-size: 22px !important;
+                line-height: 38px !important;
+                font-family: "Sangira";
+                letter-spacing: 0px;
+                color: #2a2829;
+            }
+            .description {
+                margin-bottom: 40px !important;
+            }
+            a {
+                font-size: 12px !important;
+                line-height: 14px !important;
+                padding: 13px 27px !important;
+                text-align: center !important;
+                letter-spacing: 1.2px !important;
+                border: 1px solid #000000;
+                &.btn-secondary {
+                    background: #ffffff !important;
+                    color: #000000 !important;
+                }
+            }
+        }
+        .gr-store-box {
+            bottom: 100px;
+            left: 20%;
+        }
+        .gr-filter-link {
+            margin-bottom: 40px;
+        }
+    }
+
+    // gr-iframe-section
 }
