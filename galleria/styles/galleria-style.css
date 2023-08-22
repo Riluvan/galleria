@@ -1231,19 +1231,6 @@ p {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-.gr-search-filter .gr-letters-added > div {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.gr-search-filter .gr-letters-added > div a {
-  color: #000000 !important;
-  font-size: 16px !important;
-  line-height: 19px !important;
-  font-family: "town-text-book";
-}
 .gr-search-filter .gr-letters-added .fieldset-wrapper .radio {
   display: flex !important;
   flex-wrap: wrap !important;
@@ -1289,17 +1276,6 @@ p {
 
 .gr-filter-link {
   width: 250px;
-}
-.gr-filter-link .gr-button-primary {
-  border-bottom: 1px solid #e1e1df;
-}
-.gr-filter-link .gr-button-primary .btn-primary {
-  justify-content: space-between;
-  width: 100%;
-  padding: 20px 8px !important;
-}
-.gr-filter-link .gr-button-primary .btn-primary:hover {
-  padding: 20px 16px !important;
 }
 .gr-filter-link .fieldset-wrapper .checkbox .form-checkboxes .js-form-item {
   padding: 0px 0px 20px !important;
