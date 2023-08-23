@@ -380,3 +380,8 @@ function myFunction() {
       // btn.innerHTML = "Play";
     }
   }
+
+
+  $(".switchToDark").click(function () {
+    $("body").toggleClass("dark-theme");
+  });

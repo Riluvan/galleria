@@ -29,6 +29,7 @@ body {
     font-size: 14px !important;
     line-height: 18px !important;
     color: #262626 !important;
+    background: white !important;
     overflow: hidden;
 }
 
@@ -387,6 +388,9 @@ ul {
                 }
             }
         }
+        .switchToDark {
+            cursor: pointer;
+        }
     }
     .form-switch {
         position: relative;
@@ -497,6 +501,14 @@ ul {
     }
     .navbar {
         padding: 42px 0px 28px;
+        .navbar-brand {
+            .dark-logo {
+                display: block;
+            }
+            .light-logo {
+                display: none;
+            }
+        }
         .navbar-nav {
             .nav-item {
                 padding: 0px 15px;
@@ -656,6 +668,7 @@ ul {
     .gr-discover-content {
         h1 {
             margin-bottom: 10px;
+            color: #2a2829;
         }
         h4 {
             margin-bottom: 20px;
@@ -668,7 +681,7 @@ ul {
         right: 60px;
     }
 }
-.home-discover-section {
+.gr-home-discover-section {
     .gr-discover-component {
         margin-bottom: 200px;
     }
@@ -1158,11 +1171,9 @@ footer {
     h1 {
         margin-bottom: 115px;
         margin-top: 100px;
-        color: #2a2829;
     }
     h2 {
         margin-bottom: 30px;
-        color: #2a2829;
     }
 }
 
@@ -1215,6 +1226,7 @@ p {
     div {
         margin-bottom: 20px;
         padding: 0px 20px 0pc 10px;
+        color: #000000;
     }
     a {
         background: #000000 !important;
@@ -1390,10 +1402,17 @@ p {
         }
         .btn-default {
             position: absolute;
-            right: -1px;
+            right: 0px;
             top: 0px;
             padding: 0px;
             z-index: 5;
+            width: 48px;
+            height: 48px;
+            color: #2a2829;
+            span {
+                margin-top: 12px;
+                color: #2a2829;
+            }
         }
     }
     .gr-letters-added {
@@ -1440,6 +1459,7 @@ p {
                         z-index: 1;
                         left: 16px !important;
                         top: 12px !important;
+                        color: #000000 !important;
                     }
                     &:first-child {
                         label.form-check-label {
@@ -1607,6 +1627,7 @@ p {
     }
     h1 {
         margin-bottom: 30px;
+        color: #2a2829;
     }
 }
 // gr-inspiration-banner-section
@@ -1645,7 +1666,6 @@ p {
             line-height: 38px !important;
             font-family: "Sangira";
             letter-spacing: 0px;
-            color: #2a2829;
         }
     }
 }
@@ -1665,13 +1685,11 @@ p {
             line-height: 38px !important;
             font-family: "Sangira";
             letter-spacing: 0px;
-            color: #2a2829;
         }
         .timing {
             font-size: 12px !important;
             line-height: 30px !important;
             letter-spacing: 0px;
-            color: #2a2829;
             margin-bottom: 20px;
         }
         .button {
@@ -1732,7 +1750,6 @@ p {
             line-height: 38px !important;
             font-family: "Sangira";
             letter-spacing: 0px;
-            color: #2a2829;
         }
         .description {
             margin-bottom: 40px !important;
@@ -1838,6 +1855,7 @@ p {
                         color: #2a2829 !important;
                         border: unset !important;
                         border-bottom: 3px solid #000000 !important;
+                        background: transparent !important;
                     }
                     &:focus-visible {
                         box-shadow: unset !important;
@@ -1852,7 +1870,7 @@ p {
         }
     }
     .tab-content {
-        .shows-times{
+        .shows-times {
             border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
             padding: 20px 0px;
             h4 {
@@ -1860,7 +1878,6 @@ p {
                 line-height: 38px !important;
                 font-family: "Sangira";
                 letter-spacing: 0px;
-                color: #2a2829;
             }
             .timings {
                 display: flex;
@@ -2283,6 +2300,12 @@ p {
             width: 173px;
             padding: 0px;
             margin: 0px;
+            .dark-logo {
+                display: block !important;
+            }
+            .light-logo {
+                display: none !important;
+            }
         }
         .navbar-nav {
             .nav-item {
@@ -2536,6 +2559,12 @@ p {
         }
     }
     // Fun Component
+
+    .gr-home-discover-section {
+        .gr-discover-component {
+            margin-bottom: 60px;
+        }
+    }
 
     // Heighlighted Component
     .gr-heighlighted-component {
@@ -3016,7 +3045,6 @@ p {
                 line-height: 38px !important;
                 font-family: "Sangira";
                 letter-spacing: 0px;
-                color: #2a2829;
             }
             .description {
                 margin-bottom: 40px !important;
@@ -3046,61 +3074,299 @@ p {
     // gr-iframe-section
 
     // gr-show-time-component
-.gr-show-time-component {
-    margin-bottom: 60px;
-    .gr-show-time-section {
-        .showtime {
-            margin-top: 50px;
-            &::-webkit-scrollbar {
-                opacity: 1;
-            }
+    .gr-show-time-component {
+        margin-bottom: 60px;
+        .gr-show-time-section {
+            .showtime {
+                margin-top: 50px;
+                &::-webkit-scrollbar {
+                    opacity: 1;
+                }
 
-            .nav-item {
-                margin: 0px 20px;
-                &:first-child {
-                    margin-left: 0px;
-                }
-                &:last-child {
-                    margin-right: 0px;
-                }
-                .nav-link {
-                    padding-bottom: 8px !important;
-                    color: rgba($color: #2a2829, $alpha: 0.5) !important;
-                    border: unset !important;
-                    width: 72px;
-                    &.active {
-                        color: #2a2829 !important;
+                .nav-item {
+                    margin: 0px 20px;
+                    &:first-child {
+                        margin-left: 0px;
+                    }
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                    .nav-link {
+                        padding-bottom: 8px !important;
+                        color: rgba($color: #2a2829, $alpha: 0.5) !important;
                         border: unset !important;
-                        border-bottom: 3px solid #000000 !important;
+                        width: 72px;
+                        &.active {
+                            color: #2a2829 !important;
+                            border: unset !important;
+                            border-bottom: 3px solid #000000 !important;
+                        }
+                        &:focus-visible {
+                            box-shadow: unset !important;
+                        }
                     }
-                    &:focus-visible {
-                        box-shadow: unset !important;
+                }
+            }
+            .arrow-forward {
+                display: none;
+            }
+        }
+        .tab-content {
+            padding: 0px 10px;
+            .shows-times {
+                border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+                padding: 20px 0px 0px;
+                h4 {
+                    font-size: 22px !important;
+                    line-height: 38px !important;
+                }
+                .timings {
+                    overflow-x: auto;
+                    padding-bottom: 20px;
+                    .time-box {
+                        margin-right: 27px;
                     }
                 }
             }
         }
-        .arrow-forward {
-           display: none;
-        }
     }
-    .tab-content {
-        padding: 0px 10px;
-        .shows-times{
-            border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
-            padding: 20px 0px 0px;
-            h4 {
-                font-size: 22px !important;
-                line-height: 38px !important;
-            }
-            .timings {
-                overflow-x: auto;
-                padding-bottom: 20px;
-                .time-box {
-                    margin-right: 27px;
-                }
-            }
-        }
-    }
+    // gr-show-time-component
 }
-// gr-show-time-component
+
+// DARK THEME STYLE ADDING
+
+.dark-theme {
+    color: #ffffff !important;
+    background: black !important;
+    .gr-top-header-component {
+        border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+    }
+    .gr-header-component {
+        .nav-icon-lines span {
+            background: white !important;
+        }
+        .navbar {
+            .navbar-brand {
+                .dark-logo {
+                    display: none !important;
+                }
+                .light-logo {
+                    display: block !important;
+                }
+            }
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: #ffffff !important;
+                    }
+                }
+            }
+        }
+    }
+    .gr-button-primary {
+        .btn-primary {
+            color: #ffffff !important;
+            background: linear-gradient(to right, white 49%, transparent 49%) right bottom / 200% 100% !important;
+            &:hover {
+                color: #000000 !important;
+                background-position: left bottom !important;
+            }
+        }
+    }
+    .gr-heighlighted-component {
+        .gr-heighlighted-section {
+            background: rgba($color: #ffffff, $alpha: 0.2);
+            .border {
+                border-color: transparent !important;
+            }
+        }
+    }
+    .gr-restaurant-component {
+        .gr-restaurant-image {
+            .gr-restaurant-content {
+                background: rgb(0, 0, 0);
+            }
+        }
+    }
+
+    #sticky-heading.stick-heading {
+        background: rgb(0, 0, 0);
+    }
+    #sticky.stick {
+        background: rgb(0, 0, 0);
+    }
+
+    .gr-search-filter {
+        .gr-letters-added {
+            // & > div {
+            //     a {
+            //         color: #ffffff !important;
+            //     }
+            // }
+            .fieldset-wrapper {
+                .radio {
+                    .js-form-item {
+                        label.form-check-label {
+                            color: #ffffff !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .gr-store-description-component {
+        background: #000000;
+    }
+
+    .gr-about-content-image {
+        background: #ffffff 0% 0% no-repeat padding-box;
+        opacity: 0.2;
+    }
+
+    .gr-show-time-component {
+        .gr-show-time-section {
+            .showtime {
+                .nav-item {
+                    .nav-link {
+                        color: rgba(255, 255, 255, 0.7) !important;
+                        &.active {
+                            color: rgba(255, 255, 255, 1) !important;
+                            border-bottom: 3px solid #ffffff !important;
+                        }
+                    }
+                }
+                &::after {
+                    background: rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+        .tab-content {
+            .shows-times {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                .timings {
+                    .time-box {
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+
+    .gr-event-offer-description {
+        .gr-store-box {
+            background: rgba(255, 255, 255, 0.75) 0% 0% no-repeat padding-box;
+        }
+    }
+    .gr-inspiration-banner-section {
+        .gr-button-primary {
+            .btn-primary {
+                color: #000000 !important;
+                background: linear-gradient(to right, black 49%, transparent 49%) !important;
+                background-size: 200% 100% !important;
+                background-position: right bottom !important;
+                &:hover {
+                    background-position: left bottom !important;
+                    color: #ffffff !important;
+                }
+            }
+        }
+    }
+
+    .gr-search-filter {
+        .search_input {
+            .form-control {
+                background: rgba($color: #ffffff, $alpha: 0.2) 0% 0% no-repeat padding-box;
+                border: 1px solid transparent;
+                color: #ffffff;
+                &::placeholder {
+                    color: #ffffff;
+                }
+            }
+            .btn-default {
+                color: #ffffff;
+                span {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    .gr-inspiration-filter-section{
+        .filter-boxes {
+            background: rgba($color: #ffffff, $alpha: 0.2) 0% 0% no-repeat padding-box;
+            border: 1px solid transparent;
+        }
+    }
+
+    .gr-movie-vertical-component {
+        .gr-vertical-content {
+            .button {
+                a {
+                    background: rgba($color: #ffffff, $alpha: 0.2) 0% 0% no-repeat padding-box;
+                    border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    .store-hr-devider {
+        color: rgba(255, 255, 255, 0.5);
+        opacity: 1;
+    }
+    .gr-iframe-section {
+        .gr-iframe-content {
+            a.btn-secondary {
+                background: rgba($color: #ffffff, $alpha: 0.2) !important;
+                color: #ffffff !important;
+            }
+        }
+    }
+
+    .gr-facilities-services-section {
+        .gr-facilities-content {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+    }
+    //  mobile
+
+    .navbar-collapse {
+        background: black;
+        .brand-logo {
+            .dark-logo {
+                display: none !important;
+            }
+            .light-logo {
+                display: block !important;
+            }
+        }
+        .nav-icon-lines span {
+            background: rgb(255, 255, 255);
+        }
+        .navbar-nav {
+            background: #000000 !important;
+            .nav-item {
+                .nav-link {
+                    color: rgb(255 255 255) !important;
+                }
+            }
+            .text-black {
+                color: #ffffff !important;
+            }
+        }
+        .form-select {
+            background-color: rgb(0, 0, 0) !important;
+            color: rgb(255, 255, 255) !important;
+        }
+    }
+    .gr-facilities-services-section {
+        .gr-facilities-content {
+            .accordion-button {
+                color: #ffffff;
+            }
+        }
+    }
+    .accordion {
+        --bs-accordion-color: #ffffff !important;
+        --bs-accordion-bg: #000000 !important;
+    }
 }

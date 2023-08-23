@@ -26,6 +26,7 @@ body {
   font-size: 14px !important;
   line-height: 18px !important;
   color: #262626 !important;
+  background: white !important;
   overflow: hidden;
 }
 
@@ -370,6 +371,9 @@ ul li a {
 .gr-top-header-component ul li:last-child::after {
   top: 8px;
 }
+.gr-top-header-component ul .switchToDark {
+  cursor: pointer;
+}
 .gr-top-header-component .form-switch {
   position: relative;
   margin-bottom: 0px !important;
@@ -449,6 +453,12 @@ ul li a {
 }
 .gr-header-component .navbar {
   padding: 42px 0px 28px;
+}
+.gr-header-component .navbar .navbar-brand .dark-logo {
+  display: block;
+}
+.gr-header-component .navbar .navbar-brand .light-logo {
+  display: none;
 }
 .gr-header-component .navbar .navbar-nav .nav-item {
   padding: 0px 15px;
@@ -587,6 +597,7 @@ ul li a {
 }
 .gr-discover-component .gr-discover-content h1 {
   margin-bottom: 10px;
+  color: #2a2829;
 }
 .gr-discover-component .gr-discover-content h4 {
   margin-bottom: 20px;
@@ -598,7 +609,7 @@ ul li a {
   right: 60px;
 }
 
-.home-discover-section .gr-discover-component {
+.gr-home-discover-section .gr-discover-component {
   margin-bottom: 200px;
 }
 
@@ -1036,11 +1047,9 @@ footer .margin_top_70 {
 .gr-privacy-policy h1 {
   margin-bottom: 115px;
   margin-top: 100px;
-  color: #2a2829;
 }
 .gr-privacy-policy h2 {
   margin-bottom: 30px;
-  color: #2a2829;
 }
 
 .gr-dine-discover .gr-discover-component {
@@ -1087,6 +1096,7 @@ p {
 .gr-store-box div {
   margin-bottom: 20px;
   padding: 0px 20px 0pc 10px;
+  color: #000000;
 }
 .gr-store-box a {
   background: #000000 !important;
@@ -1221,10 +1231,17 @@ p {
 }
 .gr-search-filter .search_input .btn-default {
   position: absolute;
-  right: -1px;
+  right: 0px;
   top: 0px;
   padding: 0px;
   z-index: 5;
+  width: 48px;
+  height: 48px;
+  color: #2a2829;
+}
+.gr-search-filter .search_input .btn-default span {
+  margin-top: 12px;
+  color: #2a2829;
 }
 .gr-search-filter .gr-letters-added {
   display: flex;
@@ -1259,6 +1276,7 @@ p {
   z-index: 1;
   left: 16px !important;
   top: 12px !important;
+  color: #000000 !important;
 }
 .gr-search-filter .gr-letters-added .fieldset-wrapper .radio .js-form-item:first-child label.form-check-label {
   left: 8px !important;
@@ -1394,6 +1412,7 @@ p {
 }
 .gr-inspiration-banner-section h1 {
   margin-bottom: 30px;
+  color: #2a2829;
 }
 
 .gr-facilities-services-section {
@@ -1431,7 +1450,6 @@ p {
   line-height: 38px !important;
   font-family: "Sangira";
   letter-spacing: 0px;
-  color: #2a2829;
 }
 
 .gr-movie-vertical-component {
@@ -1448,13 +1466,11 @@ p {
   line-height: 38px !important;
   font-family: "Sangira";
   letter-spacing: 0px;
-  color: #2a2829;
 }
 .gr-movie-vertical-component .gr-vertical-content .timing {
   font-size: 12px !important;
   line-height: 30px !important;
   letter-spacing: 0px;
-  color: #2a2829;
   margin-bottom: 20px;
 }
 .gr-movie-vertical-component .gr-vertical-content .button {
@@ -1509,7 +1525,6 @@ p {
   line-height: 38px !important;
   font-family: "Sangira";
   letter-spacing: 0px;
-  color: #2a2829;
 }
 .gr-iframe-section .gr-iframe-content .description {
   margin-bottom: 40px !important;
@@ -1613,6 +1628,7 @@ p {
   color: #2a2829 !important;
   border: unset !important;
   border-bottom: 3px solid #000000 !important;
+  background: transparent !important;
 }
 .gr-show-time-component .gr-show-time-section .showtime .nav-item .nav-link:focus-visible {
   box-shadow: unset !important;
@@ -1631,7 +1647,6 @@ p {
   line-height: 38px !important;
   font-family: "Sangira";
   letter-spacing: 0px;
-  color: #2a2829;
 }
 .gr-show-time-component .tab-content .shows-times .timings {
   display: flex;
@@ -1948,6 +1963,12 @@ p {
     padding: 0px;
     margin: 0px;
   }
+  .navbar-collapse .brand-logo .dark-logo {
+    display: block !important;
+  }
+  .navbar-collapse .brand-logo .light-logo {
+    display: none !important;
+  }
   .navbar-collapse .navbar-nav .nav-item {
     padding: 0px;
   }
@@ -2143,6 +2164,9 @@ p {
   }
   .gr-fun-component .gr-fun-slider .slick-list.draggable {
     padding: 0px 0px 0px 0px;
+  }
+  .gr-home-discover-section .gr-discover-component {
+    margin-bottom: 60px;
   }
   .gr-heighlighted-component {
     margin-bottom: 60px;
@@ -2560,7 +2584,6 @@ p {
     line-height: 38px !important;
     font-family: "Sangira";
     letter-spacing: 0px;
-    color: #2a2829;
   }
   .gr-iframe-section .gr-iframe-content .description {
     margin-bottom: 40px !important;
@@ -2637,4 +2660,154 @@ p {
   .gr-show-time-component .tab-content .shows-times .timings .time-box {
     margin-right: 27px;
   }
+}
+.dark-theme {
+  color: #ffffff !important;
+  background: black !important;
+}
+.dark-theme .gr-top-header-component {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dark-theme .gr-header-component .nav-icon-lines span {
+  background: white !important;
+}
+.dark-theme .gr-header-component .navbar .navbar-brand .dark-logo {
+  display: none !important;
+}
+.dark-theme .gr-header-component .navbar .navbar-brand .light-logo {
+  display: block !important;
+}
+.dark-theme .gr-header-component .navbar .navbar-nav .nav-item .nav-link {
+  color: #ffffff !important;
+}
+.dark-theme .gr-button-primary .btn-primary {
+  color: #ffffff !important;
+  background: linear-gradient(to right, white 49%, transparent 49%) right bottom/200% 100% !important;
+}
+.dark-theme .gr-button-primary .btn-primary:hover {
+  color: #000000 !important;
+  background-position: left bottom !important;
+}
+.dark-theme .gr-heighlighted-component .gr-heighlighted-section {
+  background: rgba(255, 255, 255, 0.2);
+}
+.dark-theme .gr-heighlighted-component .gr-heighlighted-section .border {
+  border-color: transparent !important;
+}
+.dark-theme .gr-restaurant-component .gr-restaurant-image .gr-restaurant-content {
+  background: rgb(0, 0, 0);
+}
+.dark-theme #sticky-heading.stick-heading {
+  background: rgb(0, 0, 0);
+}
+.dark-theme #sticky.stick {
+  background: rgb(0, 0, 0);
+}
+.dark-theme .gr-search-filter .gr-letters-added .fieldset-wrapper .radio .js-form-item label.form-check-label {
+  color: #ffffff !important;
+}
+.dark-theme .gr-store-description-component {
+  background: #000000;
+}
+.dark-theme .gr-about-content-image {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 0.2;
+}
+.dark-theme .gr-show-time-component .gr-show-time-section .showtime .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.dark-theme .gr-show-time-component .gr-show-time-section .showtime .nav-item .nav-link.active {
+  color: rgb(255, 255, 255) !important;
+  border-bottom: 3px solid #ffffff !important;
+}
+.dark-theme .gr-show-time-component .gr-show-time-section .showtime::after {
+  background: rgba(255, 255, 255, 0.2);
+}
+.dark-theme .gr-show-time-component .tab-content .shows-times {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.dark-theme .gr-show-time-component .tab-content .shows-times .timings .time-box {
+  color: #000000;
+}
+.dark-theme .gr-event-offer-description .gr-store-box {
+  background: rgba(255, 255, 255, 0.75) 0% 0% no-repeat padding-box;
+}
+.dark-theme .gr-inspiration-banner-section .gr-button-primary .btn-primary {
+  color: #000000 !important;
+  background: linear-gradient(to right, black 49%, transparent 49%) !important;
+  background-size: 200% 100% !important;
+  background-position: right bottom !important;
+}
+.dark-theme .gr-inspiration-banner-section .gr-button-primary .btn-primary:hover {
+  background-position: left bottom !important;
+  color: #ffffff !important;
+}
+.dark-theme .gr-search-filter .search_input .form-control {
+  background: rgba(255, 255, 255, 0.2) 0% 0% no-repeat padding-box;
+  border: 1px solid transparent;
+  color: #ffffff;
+}
+.dark-theme .gr-search-filter .search_input .form-control::-moz-placeholder {
+  color: #ffffff;
+}
+.dark-theme .gr-search-filter .search_input .form-control::placeholder {
+  color: #ffffff;
+}
+.dark-theme .gr-search-filter .search_input .btn-default {
+  color: #ffffff;
+}
+.dark-theme .gr-search-filter .search_input .btn-default span {
+  color: #ffffff;
+}
+.dark-theme .gr-inspiration-filter-section .filter-boxes {
+  background: rgba(255, 255, 255, 0.2) 0% 0% no-repeat padding-box;
+  border: 1px solid transparent;
+}
+.dark-theme .gr-movie-vertical-component .gr-vertical-content .button a {
+  background: rgba(255, 255, 255, 0.2) 0% 0% no-repeat padding-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+.dark-theme .store-hr-devider {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+.dark-theme .gr-iframe-section .gr-iframe-content a.btn-secondary {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+}
+.dark-theme .gr-facilities-services-section .gr-facilities-content {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.dark-theme .navbar-collapse {
+  background: black;
+}
+.dark-theme .navbar-collapse .brand-logo .dark-logo {
+  display: none !important;
+}
+.dark-theme .navbar-collapse .brand-logo .light-logo {
+  display: block !important;
+}
+.dark-theme .navbar-collapse .nav-icon-lines span {
+  background: rgb(255, 255, 255);
+}
+.dark-theme .navbar-collapse .navbar-nav {
+  background: #000000 !important;
+}
+.dark-theme .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: rgb(255, 255, 255) !important;
+}
+.dark-theme .navbar-collapse .navbar-nav .text-black {
+  color: #ffffff !important;
+}
+.dark-theme .navbar-collapse .form-select {
+  background-color: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
+}
+.dark-theme .gr-facilities-services-section .gr-facilities-content .accordion-button {
+  color: #ffffff;
+}
+.dark-theme .accordion {
+  --bs-accordion-color: #ffffff !important;
+  --bs-accordion-bg: #000000 !important;
 }/*# sourceMappingURL=galleria-style.css.map */

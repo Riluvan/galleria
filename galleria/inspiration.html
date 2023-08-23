@@ -23,11 +23,6 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
-                        <!-- <select class="form-select">
-                            <option selected>We are open today 10am - 10pm</option>
-                            <option>We are open today 12am - 12pm</option>
-                            <option>We are open today 1am - 1pm</option>
-                        </select> -->
                         <div class="text-white">We are open today 10am - 10pm</div>
                     </div>
                     <div class="col-md-8 col-lg-8 d-none d-md-block">
@@ -50,7 +45,7 @@
                                     </span>
                                 </span>
                             </li>
-                            <li>
+                            <li class="switchToDark">
                                 <span class="text-white material-symbols-outlined">
                                     dark_mode
                                 </span>
@@ -70,7 +65,8 @@
                         <nav class="navbar navbar-expand-md">
                             <div class="d-block d-md-none">
                                 <a class="navbar-brand" href="index.html">
-                                    <img src="images/logo-b-en.svg" class="img-fluid" alt="">
+                                    <img src="images/logo-b-en.svg" class="dark-logo img-fluid" alt="">
+                                    <img src="images/logo-w-en.svg" class="light-logo img-fluid" alt="">
                                 </a>
                             </div>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -105,7 +101,8 @@
                                     </div>
                                     <div class="d-none d-md-block text-center">
                                         <a class="navbar-brand d-none d-md-block" href="index.html">
-                                            <img src="images/logo-b-en.svg" class="img-fluid" alt="">
+                                            <img src="images/logo-b-en.svg" class="dark-logo img-fluid" alt="">
+                                            <img src="images/logo-w-en.svg" class="light-logo img-fluid" alt="">
                                         </a>
                                     </div>
                                     <div class="width_40">
@@ -137,7 +134,8 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <div class="d-flex align-items-center w-100">
             <a class="brand-logo" href="index.html">
-                <img src="images/logo-b-en.svg" class="img-fluid" alt="">
+                <img src="images/logo-b-en.svg" class="dark-logo img-fluid" alt="">
+                <img src="images/logo-w-en.svg" class="light-logo img-fluid" alt="">
             </a>
             <div id="nav-icon-mobile2" class="nav-icon-lines open">
                 <span></span>
@@ -197,7 +195,7 @@
                     </span>
                 </span>
                 <span class="mx-2">|</span>
-                <div class="d-flex align-items-center">
+                <div class="switchToDark d-flex align-items-center">
                     <span class="text-black material-symbols-outlined me-2">
                         dark_mode
                     </span>
@@ -271,16 +269,9 @@
                                     type="text">
                                 <div class="input-group-btn">
                                     <button class="btn btn-default" type="submit">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                            viewBox="0 0 60 60">
-                                            <g id="searchicon" data-name="Group 1700" transform="translate(21615 8142)">
-                                                <rect id="Rectangle_2263" data-name="Rectangle 2263" width="60"
-                                                    height="60" transform="translate(-21615 -8142)" fill="none" />
-                                                <path id="Path_1828" data-name="Path 1828"
-                                                    d="M19.934,18.273a2.2,2.2,0,0,1,.293.209q2.162,2.154,4.318,4.313a1.251,1.251,0,0,1-1.615,1.909c-.082-.068-.157-.146-.233-.221l-4.276-4.273c-.068-.068-.139-.133-.22-.209a11.069,11.069,0,0,1-9.775,2.08,10.883,10.883,0,0,1-6.5-4.59,11.2,11.2,0,1,1,18.011.782m0-7.029a8.723,8.723,0,1,0-8.743,8.711,8.7,8.7,0,0,0,8.743-8.711"
-                                                    transform="translate(-21597 -8124)" fill="#262626" />
-                                            </g>
-                                        </svg>
+                                        <span class="material-symbols-outlined">
+                                            search
+                                        </span>
                                     </button>
                                 </div>
                             </div>
@@ -309,21 +300,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-2">
-                    
-                </div>
-                <div class="col-md-2">
-                    
-                </div>
-                <div class="col-md-2">
-                    
-                </div>
-                <div class="col-md-2">
-                    
-                </div>
-                <div class="col-md-2">
-                   
-                </div> -->
             </div>
         </div>
     </div>
